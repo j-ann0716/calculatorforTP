@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="calc-container">
+        
+        <!-- Calculator -->
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="calc-display" class="form-control" readonly>
+            </div>
+            <div class="buttons">
+                <button class="btn btn-light" id="clear">C</button>
+                <button class="btn btn-light" id="delete">DEL</button>
+                <button class="btn btn-light op" data-value="÷">÷</button>
+
+                <button class="btn btn-light op" data-value="×">×</button>
+                
+                <button class="btn btn-light num" data-value="7">7</button>
+                <button class="btn btn-light num" data-value="8">8</button>
+                <button class="btn btn-light num" data-value="9">9</button>
+
+                <button class="btn btn-light op" data-value="-">-</button>
+
+                <button class="btn btn-light num" data-value="4">4</button>
+                <button class="btn btn-light num" data-value="5">5</button>
+                <button class="btn btn-light num" data-value="6">6</button>
+
+                <button class="btn btn-light op" data-value="+">+</button>
+
+                <button class="btn btn-light num" data-value="1">1</button>
+                <button class="btn btn-light num" data-value="2">2</button>
+                <button class="btn btn-light num" data-value="3">3</button>
+
+                <button class="btn btn-light negative" data-value="(-)">(-)</button>
+
+                <button class="btn btn-light num" data-value="00">00</button>
+                <button class="btn btn-light num" data-value="0">0</button>
+                
+                <button class="btn btn-light equal" id="equal">=</button>
+            </div>
+        </div>
+
+        <!-- History -->
+        <div class="history">
+            <h4>History</h4>
+            <div id="history-rec"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
